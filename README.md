@@ -30,6 +30,11 @@ import { Row, Col, Button } from 'rebass'
 
 The complete list of components can be found on http://jxnblk.com/rebass
 
+#### Branches
+
+- The `nobass` branch has PostCSS set up, but without Basscss or Rebass
+- The `sass-loader` branch is set up for Sass if you’re not comfortable with CSS
+
 ---
 
 **Original README follows**
