@@ -1,7 +1,6 @@
 
 var path = require('path')
 var webpack = require('webpack')
-var basscss = require('postcss-basscss')
 var cssnext = require('cssnext')
 
 module.exports = {
@@ -45,9 +44,6 @@ module.exports = {
 
   postcss: function () {
     return [
-      basscss({
-        raw: true
-      }),
       cssnext({
         features: {
           customProperties: {

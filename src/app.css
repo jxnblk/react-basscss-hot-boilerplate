@@ -1,7 +1,18 @@
 
 /* Put custom app styles here.
- * Basscss is loaded through the postcss-basscss plugin
+ *
+ * You can also import CSS modules from npm
+ *
+ * E.g.
+ * @import 'basscss';
  */
+
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  color: #111;
+}
 
 
 /*
