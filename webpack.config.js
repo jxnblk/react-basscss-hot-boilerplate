@@ -1,7 +1,6 @@
 
 var path = require('path')
 var webpack = require('webpack')
-var cssnext = require('cssnext')
 
 module.exports = {
 
@@ -36,24 +35,9 @@ module.exports = {
         include: path.join(__dirname, 'src')
       },
       {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader!postcss-loader'
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!sass-loader'
       }
-    ]
-  },
-
-  postcss: function () {
-    return [
-      cssnext({
-        features: {
-          customProperties: {
-            variables: {
-              // Example
-              // 'font-family': '"Avenir Next", Avenir, "Helvetica Neue", Helvetica, sans-serif'
-            }
-          }
-        }
-      })
     ]
   }
 
